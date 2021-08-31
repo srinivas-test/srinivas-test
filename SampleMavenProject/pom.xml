@@ -30,13 +30,13 @@
 			
   <distributionManagement>
 	<repository>
-		<id>user-001</id>
+		<id>user-001-Hosted</id>
 		<name>Internal Releases</name>
 		<url>http://localhost:8081/repository/user-001-Hosted/</url>
 	</repository>
  
 	<snapshotRepository>
-		<id>user-001</id>
+		<id>user-001-snapshot</id>
 		<name>Internal Releases</name>
 		<url>http://localhost:8081/repository/user-001-snapshot/</url>
 	</snapshotRepository>
