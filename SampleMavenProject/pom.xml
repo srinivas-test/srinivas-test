@@ -16,27 +16,31 @@
     </dependency>
   </dependencies>
   <build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <configuration>
-              <source>8</source>
-              <target>8</target>
-          </configuration>
-			</plugin>
-		</plugins>
-</build>		
+   <plugins>
+	<plugin>
+	  <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+	  <executions>
+	     <execution>
+		     <id>attach-javadocs</id>
+		     <goals>
+			     <goal>jar</goal>
+		     </goals>
+	     </execution>
+	   </executions>
+         </plugin>
+   </plugins>
+  </build>		
 			
   <distributionManagement>
 	<repository>
-		<id>user-001-Hosted</id>
+		<id>user</id>
 		<name>Internal Releases</name>
 		<url>http://localhost:8081/repository/user-001-Hosted/</url>
 	</repository>
  
 	<snapshotRepository>
-		<id>user-001-snapshot</id>
+		<id>user</id>
 		<name>Internal Releases</name>
 		<url>http://localhost:8081/repository/user-001-snapshot/</url>
 	</snapshotRepository>
