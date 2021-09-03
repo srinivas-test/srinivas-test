@@ -71,12 +71,14 @@
 	</build>
         <distributionManagement>
 		    <snapshotRepository>
-		               <id>nexusdeploymentrepo</id>
-		               <url>http://localhost:8081/repository/maven-snapshots/</url>
+		               <id>nexus-snapshot-repo</id>
+			    <name>Springboots-snapshot</name>
+		               <url>http://localhost:8081/repository/Springboots-snapshot/</url>
 		    </snapshotRepository>
 			<repository>
-			        <id>nexusdeploymentrepo</id>
-		                <url>http://localhost:8081/repository/maven-releases/</url>
+			        <id>nexus-release-repo</id>
+				<name>Springboots-hosted</name>
+				<url>http://localhost:8081/repository/Springboots-hosted/</url>
 		    </repository>
 
 	</distributionManagement>
